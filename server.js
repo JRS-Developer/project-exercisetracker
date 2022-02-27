@@ -84,7 +84,7 @@ app.post("/api/users/:userId/exercises", (req, res) => {
   const response = {
     username,
     ...newExercise,
-    _id: id,
+    _id: userId,
   };
 
   res.status(201).json(response);
